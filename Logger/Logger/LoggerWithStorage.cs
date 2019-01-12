@@ -32,7 +32,7 @@ namespace Mtszmj.Logger
         /// <summary>
         /// Storage for logged messages.
         /// </summary>
-        public IEnumerable<LogMessage> Messages { get; }
+        public IEnumerable<LogMessage> Messages => _Messages;
 
         protected override void WriteMessage(LogMessage logMsg)
         {
